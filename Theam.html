@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Theam</title>
+</head>
+<body>
+
+
+    <div class="card1" >
+       <a href="index.html"><img src="theam1.jpeg" onclick="copyCode1()" alt="This is a site Theam"></a> 
+    </div>
+        <div class="card1" >
+       <a href="index.html"><img src="theam2.jpeg" onclick="copyCode2()" alt="This is a site Theam"></a> 
+    </div>
+        <div class="card1" >
+       <a href="index.html"><img src="theam3.jpeg" onclick="copyCode3()" alt="This is a site Theam"></a> 
+    </div>
+        <div class="card1" >
+       <a href="index.html"><img src="theam4.jpeg" onclick="copyCode4()" alt="This is a site Theam"></a> 
+    </div>
+        <div class="card1" >
+       <a href="index.html"><img src="theam5.jpeg" onclick="copyCode5()" alt="This is a site Theam"></a> 
+    </div>
+        <div class="card1" >
+       <a href="index.html"><img src="theam6.jpeg" onclick="copyCode6()" alt="This is a site Theam"></a> 
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<code class="codeSnippet" id="codeSnippet1">
+theam1
+  
+</code>
+<code class="codeSnippet" id="codeSnippet2">
+theam2
+  
+</code>
+<code class="codeSnippet" id="codeSnippet3">
+theam3
+  
+</code>
+<code class="codeSnippet" id="codeSnippe4t">
+theam4
+  
+</code>
+<code class="codeSnippet" id="codeSnippet5">
+theam5
+  
+</code>
+<code class="codeSnippet" id="codeSnippet6">
+theam6
+  
+</code>
+
+
+
+ <script>
+
+
+
+
+
+
+
+
+    function copyCode1() {
+
+  var codeText = document.getElementById("codeSnippet1").innerText;
+
+
+  navigator.clipboard.writeText(codeText).then(function() {
+
+    alert("Copied the code: " + codeText);
+  }).catch(function(error) {
+
+    console.error("Could not copy text: ", error);
+  });
+}
+
+    function copyCode2() {
+
+  var codeText = document.getElementById("codeSnippet2").innerText;
+
+
+  navigator.clipboard.writeText(codeText).then(function() {
+
+    alert("Copied the code: " + codeText);
+  }).catch(function(error) {
+
+    console.error("Could not copy text: ", error);
+  });
+}
+
+    function copyCode3() {
+
+  var codeText = document.getElementById("codeSnippet3").innerText;
+
+
+  navigator.clipboard.writeText(codeText).then(function() {
+
+    alert("Copied the code: " + codeText);
+  }).catch(function(error) {
+
+    console.error("Could not copy text: ", error);
+  });
+}
+
+    function copyCode4() {
+
+  var codeText = document.getElementById("codeSnippet4").innerText;
+
+
+  navigator.clipboard.writeText(codeText).then(function() {
+
+    alert("Copied the code: " + codeText);
+  }).catch(function(error) {
+
+    console.error("Could not copy text: ", error);
+  });
+}
+
+    function copyCode5() {
+
+  var codeText = document.getElementById("codeSnippet5").innerText;
+
+
+  navigator.clipboard.writeText(codeText).then(function() {
+
+    alert("Copied the code: " + codeText);
+  }).catch(function(error) {
+
+    console.error("Could not copy text: ", error);
+  });
+}
+
+    function copyCode6() {
+
+  var codeText = document.getElementById("codeSnippet6").innerText;
+
+
+  navigator.clipboard.writeText(codeText).then(function() {
+
+    alert("Copied the code: " + codeText);
+  }).catch(function(error) {
+
+    console.error("Could not copy text: ", error);
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+</body>
+<style>
+              *{
+         font-family:"Playwrite NZ Guids",cursive;
+        color: #ffffff;
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+        background-color: rgba(214, 123, 244, 0.455);
+        list-style: none;
+}
+    code {
+  display: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-family: monospace;
+  margin-bottom: 10px;
+}
+.card1{
+
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 25px;
+    background-size: contain;
+
+}
+body{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+    background-image: url(images.jpeg);
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+}
+button{
+    height: fit-content;
+    align-items: center;
+    color: #fbfbfb85;
+    display: flex;
+    padding: 5px;
+    background-color: rgba(170, 13, 209,0.111);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255,0.3);
+    font-size: 25px;
+    width: fit-content;
+}
+button:hover {
+  background-color: #0056b3;
+}
+@media only screen and (max-width:680px){
+    body{
+        height: 125vh;
+    }
+}
+
+</style>
+</html>
