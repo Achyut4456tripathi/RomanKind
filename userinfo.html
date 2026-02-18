@@ -20,9 +20,9 @@
         <input placeholder="Enter The Purpose of Site" required>
         <input  class="site-theam" placeholder="Paste The Theam Code" type="text"  required>
         <textarea  class="site-description"placeholder="Enter description Of Your Site"  required></textarea>       
-        
+         <button onclick="send_message()" class="btnm">build Site > </button>
     </form>
-    <button onclick="send_message()" class="btnm">build Site > </button>
+   
   
 
 
@@ -57,7 +57,9 @@
 
 
 
-const button  = document.querySelector(".btnm");
+ document.querySelector("form").addEventListener("submit",function(event){
+    event.preventDefault();
+ })
 
     </script>
 
