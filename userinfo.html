@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style-userinfo.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&display=swap" rel="stylesheet">
@@ -11,91 +12,62 @@
     <title>Site Details</title>
 </head>
 <body>
-    <form>
-        <input placeholder="Your Name" type="text"  required>
+    
+    <form >
+        <input class="user-name" placeholder="Your Name" type="text"  required>
         <input placeholder="Number linked to whatsapp" type="number"  required>
-        <input placeholder="Your Site Name" type="text"  required>
+        <input  class="sitename" placeholder="Your Site Name" type="text"  required>
         <input placeholder="Enter The Purpose of Site" required>
-        <input placeholder="Paste The Theam Code" type="text"  required>
-        <textarea placeholder="Enter description Of Your Site"  required></textarea>       
-        <button onclick="alertb()">build Site ></button>
+        <input  class="site-theam" placeholder="Paste The Theam Code" type="text"  required>
+        <textarea  class="site-description"placeholder="Enter description Of Your Site"  required></textarea>       
+        <button  class="btnm">build Site > </button>
     </form>
-    <script>
-        function alertb() {
-            alert("Querry submmited : yout website is being developed by Anil Kumar Singh , it will be ready within 24our")
-        }
-    </script>
-</body>
+  
+
+
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9806044426403158"
      crossorigin="anonymous"></script>
-<style>
-          *{
-         font-family:"Playwrite NZ Guids",cursive;
-        color: #ffffff;
-        box-sizing: border-box;
-        padding: 0px;
-        margin: 0px;
-        text-decoration: none;
-        background-color: rgba(214, 123, 244, 0.455);
-        list-style: none;
-}
-::placeholder{
-    color: #ffffff81;
-}
-button{
-    height: fit-content;
-    align-items: center;
-    color: #fbfbfb85;
-    padding: 5px;
-    background-color: rgba(170, 13, 209,0.111);
-    border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255,0.3);
-    font-size: 25px;
-    width: fit-content;
-}
-form{
-    display: flex;
-    padding: 50px;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height:1500px;
-    width: 45vh;
-    border: 2px;
-    border-color: rgb(0, 0, 0);
-    border-radius: 25px;
-}
-textarea{
-    color: black;
-            border-color: rgba(255, 255, 255,0.3);
-            background-color: rgba(255, 255, 255, 0.0001);
-            border-radius: 12px;
-            width:34vh;
-            font-size: 25px;
-            margin: 2vh;
-             padding: 10px;
-            height: 10vh;
-}
 
-    body{
-        background-image: url(images.jpeg);
-        background-size: cover;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    input{
-            color: black;
-            border-color: rgba(255, 255, 255,0.3);
-            background-color: rgba(255, 255, 255, 0.0001);
-            border-radius: 12px;
-            width:34vh;
-            padding: 5px;
-            font-size: 25px;
-            margin: 2vh;
-            height: 5vh;
-    }
-</style>
+
+
+
+
+
+
+
+            <script >
+                   function send_message() {
+
+
+                           window.location.href = `whatsapp://send/?phone=919935227993&text=${message}`;
+                           console.log(message)
+            }
+
+                    const user_name= document.querySelector(".user-name").value;
+                    const site_name= document.querySelector(".sitename").value;
+                    const site_theam= document.querySelector(".site-theam").value;
+                    const site_description= document.querySelector(".site-description").value;
+                    const phone = "919935227993";
+
+                    
+                    
+                    const message  = "hellow i am " + user_name + " i want you to build a site named " + site_name +" with " + site_theam + " with " + site_description;
+                    
+
+
+
+const button  = document.querySelector(".btnm");
+
+button.addEventListener(onclick , send_message(message));
+    </script>
+
+
+
+
+
+
+
+
+
+
 </html>

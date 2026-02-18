@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Link Example</title>
+</head>
+<body>
+
+
+    <script>
+    const user_name= document.querySelector(".user-name");
+    const site_name= document.querySelector(".sitename");
+    const site_theam= document.querySelector(".site-theam");
+    const site_description= document.querySelector(".site-description");
+    const phone = "919935227993";
+    const text = encodeURIComponent("Hello! i am + Sending from website.");
+    const url = `https://web.whatsapp.com{phone}&text=${text}`;
+    
+    window.open(url, '_blank');
+
+window.location.href = `whatsapp://send/?phone=919935227993&text=${site_name}`;
+
+    </script>
+
+</body>
+</html>

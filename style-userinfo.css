@@ -1,0 +1,68 @@
+  *{
+         font-family:"Playwrite NZ Guids",cursive;
+        color: #ffffff;
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+        background-color: rgba(214, 123, 244, 0.455);
+        list-style: none;
+}
+::placeholder{
+    color: #ffffff81;
+}
+button{
+    height: fit-content;
+    align-items: center;
+    color: #fbfbfb85;
+    padding: 5px;
+    background-color: rgba(170, 13, 209,0.111);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255,0.3);
+    font-size: 25px;
+    width: fit-content;
+}
+form{
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:1500px;
+    width: 45vh;
+    border: 2px;
+    border-color: rgb(0, 0, 0);
+    border-radius: 25px;
+}
+textarea{
+    color: black;
+            border-color: rgba(255, 255, 255,0.3);
+            background-color: rgba(255, 255, 255, 0.0001);
+            border-radius: 12px;
+            width:34vh;
+            font-size: 25px;
+            margin: 2vh;
+             padding: 10px;
+            height: 10vh;
+}
+
+    body{
+        background-image: url(images.jpeg);
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    input{
+            color: black;
+            border-color: rgba(255, 255, 255,0.3);
+            background-color: rgba(255, 255, 255, 0.0001);
+            border-radius: 12px;
+            width:34vh;
+            padding: 5px;
+            font-size: 25px;
+            margin: 2vh;
+            height: 5vh;
+    }
