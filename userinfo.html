@@ -14,12 +14,12 @@
 <body>
     
     <form >
-        <input class="user-name" placeholder="Your Name" type="text"  required>
+        <input id="user-name" placeholder="Your Name" type="text"  required>
         <input placeholder="Number linked to whatsapp" type="number"  required>
-        <input  class="sitename" placeholder="Your Site Name" type="text"  required>
+        <input  id="sitename" placeholder="Your Site Name" type="text"  required>
         <input placeholder="Enter The Purpose of Site" required>
-        <input  class="site-theam" placeholder="Paste The Theam Code" type="text"  required>
-        <textarea  class="site-description"placeholder="Enter description Of Your Site"  required></textarea>       
+        <input  id="site-theam" placeholder="Paste The Theam Code" type="text"  required>
+        <textarea  id="site-description"placeholder="Enter description Of Your Site"  required></textarea>       
          <button onclick="send_message()" class="btnm">build Site > </button>
     </form>
    
@@ -38,21 +38,21 @@
 
             <script >
                    function send_message() {
-
-
-                           window.location.href = `whatsapp://send/?phone=919935227993&text=${message}`;
-                           console.log(message)
-            };
-
-                    const user_name= document.querySelector(".user-name").value;
-                    const site_name= document.querySelector(".sitename").value;
-                    const site_theam= document.querySelector(".site-theam").value;
-                    const site_description= document.querySelector(".site-description").value;
+                     const user_name= document.getElementById("user-name").value;
+                    const site_name= document.getElementById("sitename").value;
+                    const site_theam= document.getElementById("site-theam").value;
+                    const site_description= document.getElementById("site-description").value;
                     const phone = "919935227993";
 
                     
                     
-                    const message  = "hellow i am " + user_name + " i want you to build a site named " + site_name +" with " + site_theam + " with " + site_description;
+                    const message  = "Hellow I am " + user_name + " I want you to build a site named " + site_name +" with " + site_theam + " in which " + site_description;
+                    console.log(message)
+                          window.location.href = `whatsapp://send/?phone=919935227993&text=${message}`;
+                           console.log(message)
+            };
+
+                   
                     
 
 
