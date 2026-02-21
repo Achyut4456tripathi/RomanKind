@@ -13,20 +13,21 @@
 </head>
 <body>
     
-    <form >
+    <form action="feedback-page.html">
         <input id="user-name" placeholder="Your Name" type="text"  required>
         <input placeholder="Number linked to whatsapp" type="number"  required>
         <input  id="sitename" placeholder="Your Site Name" type="text"  required>
         <input placeholder="Enter The Purpose of Site" required>
         <input  id="site-theam" placeholder="Paste The Theam Code" type="text"  required>
-        <textarea  id="site-description"placeholder="Enter description Of Your Site"  required></textarea>       
-         <button onclick="send_message()" class="btnm">build Site > </button>
+        <textarea  id="site-description"placeholder="Enter description Of Your Site"  required></textarea>  
+        <a href="feedback-page.html"></a>     
+         <button onclick="send_message()" class="btnm" > build Site >> </button></a>
     </form>
    
   
 
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9806044426403158"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7801263162419314"
      crossorigin="anonymous"></script>
 
 
@@ -50,9 +51,15 @@
                     console.log(message)
                           window.location.href = `whatsapp://send/?phone=919935227993&text=${message}`;
                            console.log(message)
+                   let alerte =  alert("query submitted our developers will build your site within 12 hours");
+
+
             };
 
-                   
+                              console.log(alerte);
+                   if (alert ==true) {
+                                        
+                   }        
                     
 
 
