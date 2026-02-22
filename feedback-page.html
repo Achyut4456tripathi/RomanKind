@@ -5,61 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Give Us Feedback | Romankind</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; color: #333; margin: 0; background-color: #f4f7f6; }
-        .container { max-width: 600px; margin: 50px auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-        h1 { color: #0070f3; text-align: center; font-size: 2rem; }
-        p { text-align: center; color: #666; margin-bottom: 30px; }
-        .form-group { margin-bottom: 20px; }
-        label { display: block; margin-bottom: 5px; font-weight: 600; color: #444; }
-        input[type="text"], input[type="email"], textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 1rem; }
-        textarea { height: 120px; resize: vertical; }
-        .rating { display: flex; justify-content: center; gap: 15px; margin: 20px 0; }
-        .btn-submit { width: 100%; background: #0070f3; color: white; border: none; padding: 15px; font-size: 1.1rem; font-weight: bold; border-radius: 6px; cursor: pointer; transition: 0.3s; }
-        .btn-submit:hover { background: #0056b3; }
-        .footer-links { text-align: center; margin-top: 30px; font-size: 0.9rem; }
-        .footer-links a { color: #0070f3; text-decoration: none; margin: 0 10px; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background-color: #f4f7f6; padding: 20px; }
+        .feedback-card { max-width: 500px; margin: 50px auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #0070f3; text-align: center; }
+        input, textarea, select { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; background: #0070f3; color: white; border: none; padding: 15px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        button:hover { background: #0056b3; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Your Feedback Matters</h1>
-    <p>Help us improve our web-building tutorials and services for the community in India.</p>
+<div class="feedback-card">
+    <h1>Feedback Form</h1>
+    <p style="text-align: center;">Help us improve Romankind</p>
 
-    <!-- Replace 'YOUR_FORM_ID' with a real ID from Formspree.io for free email alerts -->
-    <form action="https://formspree.io" method="POST">
-        <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        </div>
+    <!-- FORM CONFIGURATION -->
+    <form action="https://formsubmit.co" method="POST">
+        
+        <!-- Anti-Spam (Don't remove these) -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Feedback from Romankind Site!">
+        
+        <label>Your Name</label>
+        <input type="text" name="name" placeholder="Full Name" required>
 
-        <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="email@example.com" required>
-        </div>
+        <label>Your Email</label>
+        <input type="email" name="email" placeholder="Email Address" required>
 
-        <div class="form-group">
-            <label>How helpful was our site?</label>
-            <select name="rating" style="width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #ddd;">
-                <option value="5">Excellent (5 Stars)</option>
-                <option value="4">Very Good</option>
-                <option value="3">Average</option>
-                <option value="2">Poor</option>
-                <option value="1">Needs Work</option>
-            </select>
-        </div>
+        <label>Rating</label>
+        <select name="rating">
+            <option value="5">5 Stars - Excellent</option>
+            <option value="4">4 Stars - Good</option>
+            <option value="3">3 Stars - Average</option>
+        </select>
 
-        <div class="form-group">
-            <label for="message">Suggestions or Comments</label>
-            <textarea id="message" name="message" placeholder="What can we do better?" required></textarea>
-        </div>
+        <label>Message</label>
+        <textarea name="message" placeholder="How can we help you?" required></textarea>
 
-        <button type="submit" class="btn-submit">Send Feedback</button>
+        <button type="submit">Submit Feedback</button>
     </form>
-
-    <div class="footer-links">
-        <a href="index.html">Home</a> | <a href="tutorials.html">Tutorials</a> | <a href="privacypolicies.html">Privacy Policy</a>
-    </div>
 </div>
 
 </body>
