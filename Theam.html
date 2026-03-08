@@ -6,55 +6,65 @@
     <title>Select Theam</title>
 </head>
 <body>
-
-
+<h1>Select Your Site Template</h1>
+<main>
     <div class="card1" >
-       <a href="userinfo.html"><img src="theam1.jpeg" onclick="copyCode1()" alt="This is a site Theam"></a> 
+     <img src="theam1.jpeg" onclick="copyCode1()" alt="This is a site Theam">
     </div>
         <div class="card1" >
-       <a href="userinfo.html"><img src="theam2.jpeg" onclick="copyCode2()" alt="This is a site Theam"></a> 
+     <img src="theam2.jpeg" onclick="copyCode2()" alt="This is a site Theam">
     </div>
         <div class="card1" >
-       <a href="userinfo.html"><img src="theam3.jpeg" onclick="copyCode3()" alt="This is a site Theam"></a> 
+     <img src="theam3.jpeg" onclick="copyCode3()" alt="This is a site Theam">
     </div>
         <div class="card1" >
-       <a href="userinfo.html"><img src="theam4.jpeg" onclick="copyCode4()" alt="This is a site Theam"></a> 
+     <img src="theam4.jpeg" onclick="copyCode4()" alt="This is a site Theam">
     </div>
         <div class="card1" >
-       <a href="userinfo.html"><img src="theam5.jpeg" onclick="copyCode5()" alt="This is a site Theam"></a> 
+     <img src="theam5.jpeg" onclick="copyCode5()" alt="This is a site Theam">
     </div>
         <div class="card1" >
-       <a href="userinfo.html"><img src="theam6.jpeg" onclick="copyCode6()" alt="This is a site Theam"></a> 
+     <img src="theam6.jpeg" onclick="copyCode6()" alt="This is a site Theam">
     </div>
             <div class="card1" >
-       <a href="userinfo.html"><img src="theam 8.jpg" onclick="copyCode8()" alt="This is a site Theam"></a> 
+     <img src="theam 8.jpg" onclick="copyCode8()" alt="This is a site Theam">
     </div>
             <div class="card1" >
-       <a href="userinfo.html"><img src="theam 9.jpg" onclick="copyCode9()" alt="This is a site Theam"></a> 
+     <img src="theam 9.jpg" onclick="copyCode9()" alt="This is a site Theam">
     </div>
             <div class="card1" >
-       <a href="userinfo.html"><img src="theam 10.jpg" onclick="copyCode10()" alt="This is a site Theam"></a> 
+     <img src="theam 10.jpg" onclick="copyCode10()" alt="This is a site Theam">
     </div>
             <div class="card1" >
-       <a href="userinfo.html"><img src="theam 11.jpg" onclick="copyCode11()" alt="This is a site Theam"></a> 
+     <img src="theam 11.jpg" onclick="copyCode11()" alt="This is a site Theam">
     </div>
             <div class="card1" >
-       <a href="userinfo.html"><img src="theam 12.jpg" onclick="copyCode12()" alt="This is a site Theam"></a> 
+     <img src="theam 12.jpg" onclick="copyCode12()" alt="This is a site Theam">
     </div>
             <div class="card1" >
-       <a href="userinfo.html"><img src="theam 14.jpg" onclick="copyCode14()" alt="This is a site Theam"></a> 
+     <img src="theam 14.jpg" onclick="copyCode14()" alt="This is a site Theam">
     </div>
             <div class="card1" >
-       <a href="userinfo.html"><img src="theam 15.jpg" onclick="copyCode15()" alt="This is a site Theam"></a> 
+     <img src="theam 15.jpg" onclick="copyCode15()" alt="This is a site Theam">
     </div>
             <div class="card1" >
-       <a href="userinfo.html"><img src="theam 15.jpg" onclick="copyCode15()" alt="This is a site Theam"></a> 
+     <img src="theam 15.jpg" onclick="copyCode15()" alt="This is a site Theam">
     </div>
 
 
-
-
-
+</main>
+<footer><a href="index.html">
+<button >
+  Back
+</button>
+</a>
+<a href="">Having problem ? read guide.</a>
+<a href="userinfo.html">
+<button>
+Next >
+</button>
+</a>
+</footer>
 
 
 
@@ -332,6 +342,7 @@ theam15
         color: #ffffff;
         box-sizing: border-box;
         padding: 0px;
+        align-items: center;
         margin: 0px;
         text-decoration: none;
         background-color: rgba(214, 123, 244, 0.455);
@@ -355,23 +366,46 @@ theam15
     background-size: contain;
 
 }
+a{
+  background-color:rgba(170, 13, 209,0.111) ;
+}
+h1{
+      background-color:rgba(170, 13, 209,0.111);
+
+       text-align: center;
+}
 body{
+ background-image: url(images.jpeg);
+    background-size: cover;
+    height: fit-content;
+    align-items: center;
+}
+main{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     font-size: 30px;
-    background-image: url(images.jpeg);
+      background-color:rgba(170, 13, 209,0.111);
     background-size: cover;
+
     text-align: center;
     height: fit-content
+}
+footer{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  background-color:rgba(170, 13, 209,0.111);
+
 }
 button{
     height: fit-content;
     align-items: center;
     color: #fbfbfb85;
-    display: flex;
+    margin:25px;
     padding: 5px;
     background-color: rgba(170, 13, 209,0.111);
     border-radius: 5px;
@@ -380,13 +414,12 @@ button{
     width: fit-content;
 }
 button:hover {
-  background-color: #0056b3;
+
+  background-color: rgba(214, 123, 244, 0.9); 
+  color: #f9f9f9;
 }
-@media only screen and (max-width:680px){
-    body{
-        height: 125vh;
-    }
-}
+
+
 
 </style>
 </html>

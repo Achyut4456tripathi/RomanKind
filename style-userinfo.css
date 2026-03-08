@@ -9,11 +9,19 @@
         list-style: none;
 }
 ::placeholder{
-    color: #ffffff81;
+    color: #ffffff;
+}
+label{
+  background-color: rgba(255, 255, 255, 0.0001);
+  text-align: left;
+}
+h1{
+      background-color: rgba(255, 255, 255, 0.0001);
 }
 button{
     height: fit-content;
     align-items: center;
+    margin-left: 28%;
     color: #fbfbfb85;
     padding: 5px;
     background-color: rgba(170, 13, 209,0.111);
@@ -25,12 +33,14 @@ button{
 form{
     display: flex;
     padding: 50px;
-    align-items: center;
+    text-align: left;
+    align-items: left;
     flex-direction: column;
     justify-content: space-evenly;
-    height:1500px;
+    height:fit-content;
     width: 45vh;
     border: 2px;
+    background-color: rgba(255, 255, 255, 0.1);
     border-color: rgb(0, 0, 0);
     border-radius: 25px;
 }
@@ -41,7 +51,7 @@ textarea{
             border-radius: 12px;
             width:34vh;
             font-size: 25px;
-            margin: 2vh;
+            margin-bottom: 4vh;
              padding: 10px;
             height: 10vh;
 }
@@ -63,6 +73,6 @@ textarea{
             width:34vh;
             padding: 5px;
             font-size: 25px;
-            margin: 2vh;
+            margin-bottom: 4vh;
             height: 5vh;
     }
